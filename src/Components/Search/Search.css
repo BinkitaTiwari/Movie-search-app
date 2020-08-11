@@ -25,17 +25,29 @@
 
 
 .search .results {
-    display: flex;
+    display: block;
     top: 40px;
-    left: 0;
-    right: 0;
-    z-index: 20;
     padding: 10px;
     margin: 0;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #cbcfe2 #c8cee7 #c4c7d7;
-    border-radius: 3px;
-    background-color: #fdfdfd;
+    color:white;
     justify-content: space-between;
+}
+.search .results li { 
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid gray;
+    text-align: left;
+    height: 50px;
+    cursor: pointer;
+}
+
+.search .results li img { 
+    width: 60px;
+    height:60px;
+    margin-right: 5px;
+}
+
+.search .results li:hover { 
+    background: rgba(170, 167, 167, 0.1);
 }

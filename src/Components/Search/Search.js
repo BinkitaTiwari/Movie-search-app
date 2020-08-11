@@ -20,7 +20,8 @@ const Search = (props) => {
 
     return (
         <div className="search">
-            <input type="text" name="movie-search" value ={props.defaultTitle} onChange={props.search} placeholder="Enter Your movie" />
+            <input type="search" name="movie-search" value ={props.defaultTitle} onChange={props.search} placeholder="Enter Your movie" />
+            <br/><br/>
             {resultList}
         </div>
     );

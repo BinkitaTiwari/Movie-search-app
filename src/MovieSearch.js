@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { Fragment,Component } from 'react';
 import axios from 'axios';
-
+import Header from './Components/Header/Header';
 import MovieCard from './Components/Movie-card/Movie-card';
 import Search from './Components/Search/Search';
 
@@ -73,7 +73,10 @@ class MovieSearch extends Component {
 
     render() {
         return (
+            <Fragment>
+                <Header/>
             <div onClick={() => this.setState({ isSearching: false })}>
+                
                 <Search
                     defaultTitle={this.state.title}
                     search={this.searchMovie}
@@ -83,6 +86,7 @@ class MovieSearch extends Component {
 
                 {this.state.movieId? <MovieCard movie={this.state.movie}/> : null}
             </div>
+            </Fragment>
         );
     }
 }

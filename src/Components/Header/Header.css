@@ -1,0 +1,41 @@
+.header {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 250px;
+    
+    
+}
+
+   .options {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  
+      .option {
+        padding: 50px 50px;
+        margin-left:50px;
+        margin-right: 50px;
+        color:gray;
+        text-decoration: none;
+        font-style:normal;
+        font-weight: bold;
+      }
+    
+      .option1{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        margin-right: 50px;
+        margin-right: 50px;
+        padding: 50px 50px;
+        align-items: center;
+        color:gray;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: bold;
+      }

@@ -7,7 +7,7 @@ const Header=()=>{
         <div className="header">
             <Link className="option1" to="/" >HOME</Link>
             <div className="options">
-                <Link  className="option" to="/">FAVOURITES</Link>
+                <Link  className="option" to="/favourites">FAVOURITES</Link>
             </div>
 
         </div>

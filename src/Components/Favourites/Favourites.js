@@ -1,42 +1,37 @@
 import React from 'react';
 
-import './Movie-card.css';
+import './Favourites.css';
 
-const MovieCard = (props) => { 
+const Favourites = (props) => { 
 
         return(
             <div className="container">
                 <div className="movie-card">
-                    <div className="movie-header" style={{ backgroundImage: `url(${props.movie.Poster})` }}>
+                    <div className="movie-header" > IMAGE
                     </div>
                     <div className="movie-content">
                         <div className="movie-content-header">
-                            <h3 className="movie-title">{props.movie.Title}</h3>
+                            <h3 className="movie-title">TITLE</h3>
                         </div>
                         <div className="movie-info">
                             <div className="info-section">
                                 <label>Released</label>
-                                <span>{props.movie.Released}</span>
+                                <span></span>
                             </div>
                             <div className="info-section">
                                 <label>IMDB Rating</label>
-                                <span>{props.movie.imdbRating}</span>
+                                <span></span>
                             </div>
                             <div className="info-section">
                                 <label>Rated</label>
-                                <span>{props.movie.Rated}</span>
+                                <span></span>
                             </div>
                             <div className="info-section">
                                 <label>Runtime</label>
-                                <span>{props.movie.Runtime}</span>
+                                <span></span>
                             </div>
                         </div>
-                        <div className="plot" style={{fontSize: '12px'}}>
-                            <p>{props.movie.Plot}</p>
-                        </div>
-                        <div >
-                        <i class="icon fa fa-heart-o"></i>
-                        </div>
+                        
                         
                     </div>
                 </div>
@@ -47,4 +42,4 @@ const MovieCard = (props) => {
     
     
 
-export default MovieCard;
+export default Favourites;

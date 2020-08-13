@@ -3,6 +3,8 @@ import axios from 'axios';
 import Header from './Components/Header/Header';
 import MovieCard from './Components/Movie-card/Movie-card';
 import Search from './Components/Search/Search';
+//import Favourites from './Components/Favourites/Favourites';
+//import {Switch,Route} from 'react-router-dom';
 
 class MovieSearch extends Component {
     state = {
@@ -11,6 +13,7 @@ class MovieSearch extends Component {
         movie: {},
         searchResults: [],
         isSearching: false,
+       
     }
 
     componentDidMount() {
@@ -71,10 +74,13 @@ class MovieSearch extends Component {
     }
 
 
+    
+
     render() {
         return (
             <Fragment>
                 <Header/>
+                
             <div onClick={() => this.setState({ isSearching: false })}>
                 
                 <Search
@@ -83,8 +89,9 @@ class MovieSearch extends Component {
                     results={this.state.searchResults}
                     clicked={this.itemClicked}
                     searching={this.state.isSearching} />
-
-                {this.state.movieId? <MovieCard movie={this.state.movie}/> : null}
+                {this.state.movieId? <MovieCard movie={this.state.movie} /> : null}
+                
+                
             </div>
             </Fragment>
         );
